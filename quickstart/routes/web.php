@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+/**
+ * Show Task Dashboard
+ */
+Route::get('/', 'TaskController@index');
+
+/**
+ * Add New Task
+ */
+Route::post('/task', 'TaskController@store');
+
+/**
+ * Delete Task
+ */
+Route::delete('/task/{task}', 'TaskController@destroy');
