@@ -57,11 +57,7 @@
                                 </td>
 
                                 <!-- Delete Button -->
-                                <td>
-                                    {!! Form::open(['url' => ('task/' . $task->id), 'method' => 'delete']) !!}
-                                    {!! Form::button('<i class="fa fa-trash"></i> Delete', ['type' => 'submit', 'class' => 'btn btn-danger']) !!}
-                                    {!! Form::close() !!}
-                                </td>
+                                
                             </tr>
                         @endforeach
                     </tbody>
