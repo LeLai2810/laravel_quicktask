@@ -35,7 +35,7 @@ class TaskController extends Controller
         $task->name = $request->name;
         $task->save();
 
-        
+        return redirect('/');
     }
 
 	/**
@@ -48,6 +48,6 @@ class TaskController extends Controller
     {
         $task->delete();
 
-        return redirect('/');
+       
     }
 }
